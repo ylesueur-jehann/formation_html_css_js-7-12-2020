@@ -1,0 +1,123 @@
+p {
+    background-color: wheat;
+}
+
+a {
+    /*
+        On ne peut pas modifier la largeur 
+        d'une balise avec un affichage en
+        inline
+    */
+    display: inline;
+    background-color: aquamarine;
+}
+
+#p2 {
+    /* 
+        On peut changer le type 
+        d'affichage d'un element avec la propriete
+        display 
+    */
+    display: inline-block;
+    background-color: wheat;
+    width: 200px;
+}
+/********************* 
+    Positions
+*/
+p {
+    /* position par défaut */
+    position: static;
+}
+
+#link1 {
+    position: relative;
+    /* 
+        4 nouvelles proprietes viennent avec 
+        la position relative:
+        top, left, right, bottom
+    */
+    top: 25px;
+    left: 10px;
+}
+
+header {
+    /* reste fixé sur la page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    /* 
+        Plus le z-index est élévé, plus
+        l'element passera devant les autres
+        (premier plan) 
+    */
+    z-index: 1;
+}
+
+main {
+    margin-top: 200px;
+}
+
+main div {
+    position: relative;
+    background-color: darkgray;
+    height: 200px;
+}
+main div p{
+    /* Marge extèrieures */
+    margin: 0;
+}
+
+/*
+    comme la balise parente est en position relative.
+    Les balises enfants en position absolue seront
+    en absolu dans la balise parent
+*/
+#lorem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: royalblue;
+}
+
+#ipsum {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: cornsilk;
+}
+
+#dolor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: coral;
+}
+
+button {
+    /* margin-top: 20px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    margin-left: 10px; */
+    
+    /* sens des aiguilles d'une montre */
+    /* margin: 20px 8px 5px 10px; */
+
+    /* 10px en haut et en bas, 20px a droite et a gauche */
+    margin: 10px 20px;
+
+    /* 10px partout */
+    padding: 10px;
+}
+
+
+main > h2 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    z-index: 2;
+}

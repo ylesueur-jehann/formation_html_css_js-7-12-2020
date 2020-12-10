@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Site RWD</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+<!-- Exercice : construire un site avec un logo, un menu, 4 articles
+contenant chacun une image, un titre, un paragraphe de présentation
+et un lien renvoyant vers l'article complet. Il y aura aussi un aside (=apparté)
+avec une barre de recherche et des liens vers des archives, des articles anciens -->
+
+
+  <body class="container">
+
+        <header>
+          <!-- logo -->
+          <img src="assets/logo_zero_dechet.png" alt="logo site" id="logo">
+
+          <!-- Début navigation -->
+          <nav class="main_nav">
+              <ul class="nav_block">
+                <li class="nav_item"><a href="#">accueil</a></li>
+                <li><a href="#">zéro déchet</a></li>
+                <li><a href="#">maison</a></li>
+                <li><a href="#">hygiène</a></li>
+                <li><a href="#">DIY</a></li>
+                <li><a href="#">événements</a></li>
+              </ul>
+          </nav>
+          <!-- Fin navigation -->
+
+        </header>
+
+        <article class="main_article">
+          <img src="assets/ma-salle-de-bain-cest-du-solide.png" alt="photo_main_article">
+          <h2>Ma salle de bain c'est du solide !</h2>
+          <p class="main_article_text">Le solide est le nouveau cosmétique à la mode. Adieu au liquide et surtout à ce qui permet de le contenir c’est à dire le plus souvent des flacons en plastique. Se lancer dans le Zéro Déchet c’est non seulement éviter de produire des déchets mais aussi utiliser des produits plus sains pour soi et pour l’environnement. Les cosmétiques solides allient parfaitement les deux.</p>
+          <a class="main_article_more" href="#">article complet</a>
+        </article>
+
+        <main class="main_content">
+
+          <section class="articles">
+            <!-- Article à rajouter plus tard (signalé dans le CSS) -->
+            <article class="article article_hidden">
+              <img class="article_img" src="assets/ma-salle-de-bain-cest-du-solide.png" alt="photo_main_article">
+              <h3 class="article_title">Ma salle de bain c'est du solide !</h3>
+              <p class="article_text">Le solide est le nouveau cosmétique à la mode. Adieu au liquide et surtout à ce qui permet de le contenir c’est à dire le plus souvent des flacons en plastique. Se lancer dans le Zéro Déchet c’est non seulement éviter de produire des déchets mais aussi utiliser des produits plus sains pour soi et pour l’environnement. Les cosmétiques solides allient parfaitement les deux.</p>
+              <a class="article_more" href="#">article complet</a>
+            </article>
+            <!-- Fin Article à rajouter-->
+            <article class="article">
+              <img class="article_img" src="assets/debuter_zero_dechet.jpg" alt="zero">
+              <h3 class="article_title">Débuter le zéro déchet</h3>
+              <p class="article_text">Ce qui fait le plus peur lorsqu’on souhaite débuter dans le zéro déchet c’est qu’on ne sait généralement pas par quoi commencer. La tâche est si vaste qu’on peut vite s’y perdre et perdre ainsi la motivation de se lancer. Voici quelques astuces pour bien se lancer dans le zéro déchet sans se mettre la pression. Un petit pas après l’autre !</p>
+              <a class="article_more" href="#">article complet</a>
+            </article>
+            <article class="article">
+              <img class="article_img" src="assets/dechet_ocean.jpg" alt="plastic free">
+              <h3 class="article_title">Sauvons la nature de la pollution plastique</h3>
+              <p class="article_text">Chaque année, 8 millions de tonnes de plastiques finissent dans nos océans. Demandons aux gouvernements du monde entier d’agir pour stopper cette crise avant qu’il ne soit trop tard.</p>
+              <a class="article_more" href="#">article complet</a>
+            </article>
+            <article class="article">
+              <img class="article_img" src="assets/liquide_vaisselle_maison.jpg" alt="diy vaisselle">
+              <h3 class="article_title">DIY : Une recette de liquide vaisselle réellement efficace</h3>
+              <p class="article_text">Quand on passe au mode de vie zéro-déchet, on se rend vite compte qu’il est bien plus économique, pratique et moins polluant de fabriquer ses propres produits d’entretien. Avec quelques produits de base, on peut faire de nombreux produits (liquide vaisselle, produit multi-usage, lessive etc.) ce qui est très économique. Ensuite, on sait exactement ce qu’on met dedans, en l’occurrence des produits qui ne sont pas toxiques pour notre belle planète. Et pendant que les petits poissons nous disent merci, j’avoue aussi qu’il y a un certain plaisir dans le fait de “fabriquer” les choses soi-même.</p>
+              <a class="article_more" href="#">article complet</a>
+            </article>
+          </section>
+
+          <aside class="">
+            <div class="search">
+            <h3 class="search_title">rechercher</h3>
+              <form class="search_form" action="index.html" method="post">
+                <input type="text" name="" placeholder="Recherche...">
+                <button type="submit" name="button">Rechercher</button>
+              </form>
+            </div>
+
+            <div class="archive">
+              <h3 class="archive_title">Derniers articles</h3>
+              <ul class="archive_list">
+                <li class="archive_list_item"><a href="#">juin 2019</a></li>
+                <li class="archive_list_item"><a href="#">mai 2019</a></li>
+                <li class="archive_list_item"><a href="#">avril 2019</a></li>
+                <li class="archive_list_item"><a href="#">mars 2019</a></li>
+                <li class="archive_list_item"><a href="#">février 2019</a></li>
+                <li class="archive_list_item"><a href="#">janvier 2019</a></li>
+              </ul>
+            </div>
+          </aside>
+
+    </main>
+
+    <footer class="footer">
+      <p>Les articles sont soumis à des droits d'auteurs.</p>
+    </footer>
+  </body>
+</html>

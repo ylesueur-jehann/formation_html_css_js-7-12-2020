@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Les tableaux</title>
+    </head>
+    <body>
+        <!-- Tableau -->
+        <table border="1">
+            <caption>Tableau des utilisateurs</caption>
+            <!-- Table HEAD -->
+            <thead>
+                <!-- Row: Rangées ou lignes -->
+                <tr>
+                    <!-- Table Heading -->
+                    <th>#</th>
+                    <th>Prenom</th>
+                    <th>Email</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Table Data -->
+                    <td>1</td>
+                    <td>John</td>
+                    <td>j.doe@exemple.fr</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maude</td>
+                    <td rowspan="2">
+                        m.zarella@exemple.fr
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alain</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td colspan="2">3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

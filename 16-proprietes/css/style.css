@@ -1,0 +1,100 @@
+@font-face {
+    src: url('./fonts/beautiful_heart/Beautiful\ Heart.ttf') format('truetype');
+    font-family: 'beautiful';
+}
+
+h1 {
+    font-family: 'beautiful';
+    font-size: 70px;
+}
+
+p {
+    /* Couleur du texte */
+    color: darkred;
+
+    /* Couleur de fond */
+    background-color: cornflowerblue;
+
+    /* Graisse de la police  */
+    font-weight: bold;
+
+    /* Taille de la police, par defaut: 16px */
+    font-size: 25px;
+
+    /* Modifier la police */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
+    /* Transformer du texte */
+    text-transform: capitalize;
+
+    /* Decoration du texte */
+    text-decoration: underline;
+
+    /* Alignement du contenu */
+    text-align: justify;
+}
+
+div {
+    background-color: aquamarine;
+    text-align: center;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+
+    /* border-bottom-style: solid;
+    border-bottom-width: 1px; */
+
+    /* border-bottom: 1px solid black; */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#square {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    /* margin-top: 25px; */
+    border-radius: 50%;
+    /* 
+        marge a gauche et a droite automatique
+     */
+    margin: 25px auto;
+}
+
+
+section {
+    background-color: cyan;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.responsive img {
+    width: 100%;
+}
+
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 15px;
+    /* background-color: aliceblue; */
+    /* color: white; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

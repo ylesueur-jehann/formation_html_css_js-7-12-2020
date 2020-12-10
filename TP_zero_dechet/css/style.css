@@ -1,0 +1,209 @@
+/* Debut reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/* Fin du reset */
+
+
+/* On commence par le design de la version mobile */
+
+/*//// HEADER ////*/
+
+#logo{
+  width: 40%; /* attention tester taille logo */
+  margin: 5% auto;
+  display: block;
+  justify-content: center;
+}
+
+/**********************************
+  Navigation
+***********************************/
+/* .nav_item a{ */
+.main_nav a{
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #A3D9C5;
+  line-height: 40px;
+}
+
+/* .nav_item a:hover{ */
+.main_nav a:hover{
+  background-color: #6FBFA2;
+}
+
+/* .nav_item{ */
+.main_nav li{
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+
+/*article principal*/
+.main_article{
+  display: none;
+}
+
+
+/* ////// Ajout de l'article principal en tant qu'article
+ normal dans le html ////// */
+
+
+
+/*contenu principal*/
+.article, .search, .archive{
+  padding: 15px 20px;
+}
+/*articles*/
+.article_img{
+  width: 100%;
+}
+.article_title{
+  margin: 10px auto;
+}
+.article_text{
+  margin: 10px auto;
+  text-align: justify;
+}
+.article_more{
+  color: #6FBFA2;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.article_more:hover{
+  color: #A3D9C5; /*couleur block navigation */
+}
+
+.search_title, .archive_title{
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.search_form input{
+  width: 80%;
+  height: 2em;
+}
+.search_form [type='submit']{
+  /* on cible tous les input qui ont le type submit dans la classe seach_form */
+  height: 2em;
+  padding: 0 0.5em;
+}
+.archive_list_item {
+  text-transform: capitalize;
+  padding: 5px 10px;
+}
+.archive_list_item a{
+  color: #6FBFA2;
+}
+.archive_list_item a:hover{
+  color: #A3D9C5;
+}
+/*footer*/
+.footer{
+  color: #000;
+  text-align: center;
+  font-size: 0.7em;
+}
+/* Pour les écrans à partir de 490px (tablettes) */
+
+  /* On va modifier le menu de navigation
+      On va faire apparaitre l'article principal en grand
+        et cacher l'article hidden */
+
+@media only screen and (min-width: 490px){
+
+  /*navigation*/
+  .nav_block{
+    display: grid;
+    /* On va passer sur une grille de 3 colonnes qui font chacune 1fr */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /*main article*/
+  .main_article{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .main_article img{
+    width: 100%;
+  }
+  .main_article_text, h2{
+    margin: 15px 20px;
+    text-align: justify;
+  }
+  .main_article_more{
+    color: #6FBFA2;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .main_article_more:hover{
+    color: #A3D9C5; /*couleur block navigation */
+  }
+
+/* article_hidden */
+  /* Cacher article qui avait été rajouté */
+  .article_hidden{
+    display: none;
+  }
+
+/*articles*/
+
+/* On met les articles et le aside sur une grille
+     2 colonnes de chacune 1fr */
+.articles, aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
+}
+}
+
+/* Pour les écrans à partir de 800px (ordinateur) */
+
+  /* On va modifier le menu de navigation
+      On va faire apparaitre l'article principal en grand
+        et cacher l'article hidden */
+
+@media only screen and (min-width: 800px) {
+  body{
+    width: 800px;
+    margin: 0 auto;
+  }
+  /*navigation*/
+  .nav_block{
+    display: grid;
+    /* On passe le menu sur une grille de 6 colonnes de 1fr (=une ligne) */
+    grid-template-columns: repeat(6, 1fr);
+  }
+  /*main_content*/
+  .main_content{
+    display: grid;
+    /* On passe le contenu articles + aside sur une grille
+    de 2 colonnes : une de 3fr (les articles) et
+    une de 1fr (aside) */
+    grid-template-columns: 3fr 1fr;
+  }
+  aside{
+    /* On fait passer les éléments du aside l'un en dessous de l'autre
+    en définissant que le aside n'a qu'une seule colonne */
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 2fr 4fr; */
+  }
+
+}

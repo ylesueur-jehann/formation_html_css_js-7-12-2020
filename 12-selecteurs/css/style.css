@@ -1,0 +1,72 @@
+/* 
+    Selectionne un element html par sa balise
+*/
+h2 {
+    color: coral;
+}
+
+/****************
+ Selectionner un element par son id
+  #mon-id
+***************/
+#titre1 {
+    color: rgb(102, 51, 153)
+}
+
+/****************
+ Selectionne tous les éléments qui ont classe
+  .ma-classe
+***************/
+.titres {
+    color: #6495ed;
+}
+/****************
+ Selectionne Tous les éléments qui ont l'attribut title
+  [attr]
+***************/
+[title] {
+    color: goldenrod
+}
+
+/****************
+ Selectionne tous les éléments qui ont 
+ l'attribut type="date"
+  [attr="mavaleur"]
+***************/
+[type="date"] {
+    color: darkorange;
+}
+
+/************************
+    Selectionner toutes les balises p qui se trouvent a l'interieur d'une section
+    pour leur la couleur darkred
+********************/
+section p{
+    color: darkred;
+}
+
+/************************
+    Selectionner toutes les balises q et les balises label
+    pour leur appliquer le meme style
+********************/
+q, label {
+    color: chartreuse;
+    background-color: black;
+}
+
+section .titres {
+    color: aqua;
+}
+
+/* section #titre1, p {
+
+} */
+
+
+/*********************
+ Selectionne toutes les balaises p 
+ qui sont filles directes de la balise article
+**********************/
+article > p {
+    color: blue;
+}

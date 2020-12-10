@@ -1,0 +1,101 @@
+hr {
+    margin: 30px 0;
+}
+
+.flex-container, .flex-container-col{
+    display: flex;
+    background-color: #6B3D0F;
+    height: auto;
+}
+
+.flex-container-col {
+    flex-direction: column;
+}
+
+.item {
+    color: #6B3D0F;
+    background-color: #2C97B8;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 1.3em;
+    font-size: 1.6em;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-space-around{
+    justify-content: space-around;
+}
+.flex-space-evenly{
+    justify-content: space-evenly;
+}
+
+.flex-cross {
+    height: 500px;
+}
+
+.flex-spb {
+    align-items: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.item-no-shrink {
+    flex-shrink: 0;
+}
+
+.item-flex {
+    flex: 1 1 200px;
+}
+
+.i1 {
+    align-self: flex-start;
+}
+
+.i2 {
+    align-self: center;
+}
+
+.i3 {
+    align-self: flex-end;
+}
+
+.i4 {
+    height: auto;
+    align-self: stretch;
+}
+.i5 {
+    /* centre l'element verticalement et horizontalement si c'est le seul element */
+    margin: auto;
+}
+
+.flex-align-content {
+    /* justify-content: center; */
+    align-items: flex-end;
+    align-content: center;
+}
+
+.flx-1 {
+    justify-content: center;
+    align-content: center;
+}

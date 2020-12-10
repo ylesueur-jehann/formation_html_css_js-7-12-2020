@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h2>Rangée</h2>
+        <div class="flex-container" style="width: 300px; flex-wrap: wrap; height: 500px;">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+        
+        <hr/>
+        <h2>Colonne</h2>
+        <div class="flex-container-col">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Axe principale - center </h2>
+        <div class="flex-container flex-center">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Axe principale - space-between </h2>
+        <div class="flex-container flex-space-between">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe principale - space-around</h2>
+        <div class="flex-container flex-space-around">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe principale - space-evenly</h2>
+        <div class="flex-container flex-space-evenly">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe principale</h2>
+        <div class="flex-container flex-space-between">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Axe secondaire</h2>
+        <div class="flex-container flex-cross flex-spb">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Axe secondaire</h2>
+        <div class="flex-container flex-cross flex-end">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe secondaire</h2>
+        <div class="flex-container flex-cross flex-end flex-center">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe principale colonne</h2>
+        <div class="flex-container-col flex-center" style="height: 700px;">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Axe principale + secondaire colonne</h2>
+        <div class="flex-container-col flex-center flex-end" style="height: 700px;">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Flex wrap</h2>
+        <div class="flex-container flex-wrap">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div class="item">
+                <p>item 2</p>
+            </div>
+            <div class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Flex shrink</h2>
+        <div class="flex-container">
+            <div class="item item-no-shrink">
+                <p>item 1</p>
+            </div>
+            <div class="item item-no-shrink">
+                <p>item 2</p>
+            </div>
+            <div class="item item-no-shrink">
+                <p>item 3</p>
+            </div>
+            <div class="item item-no-shrink">
+                <p>item 4</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Flex</h2>
+        <div class="flex-container">
+            <div class="item item-flex">
+                <p>item 1</p>
+            </div>
+            <div class="item item-flex">
+                <p>item 2</p>
+            </div>
+            <div class="item item-flex">
+                <p>item 3</p>
+            </div>
+            <div class="item item-flex">
+                <p>item 4</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h2>Align self</h2>
+        <div class="flex-container" style="height: 300px;">
+            <div class="item i1">
+                <p>item 1</p>
+            </div>
+            <div class="item i2">
+                <p>item 2</p>
+            </div>
+            <div class="item i3">
+                <p>item 3</p>
+            </div>
+            <div class="item i4">
+                <p>item 4</p>
+            </div>
+            <div class="item i5">
+                <p>item 5</p>
+            </div>
+        </div>
+
+
+        <hr/>
+        <h2>Align content</h2>
+        <div class="flex-container flex-wrap flex-align-content" style="height: 700px;">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div style="height: 240px;" class="item">
+                <p>item 2</p>
+            </div>
+            <div style="height: 80px;"class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+            <div class="item">
+                <p>item 5</p>
+            </div>
+            <div class="item">
+                <p>item 6</p>
+            </div>
+            <div class="item">
+                <p>item 7</p>
+            </div>
+            <div class="item">
+                <p>item 8</p>
+            </div>
+            <div class="item">
+                <p>item 9</p>
+            </div>
+            <div class="item">
+                <p>item 10</p>
+            </div>
+        </div>
+
+        <h2>Align content</h2>
+        <div class="flex-container-col flex-wrap flx-1" style="height: 700px;">
+            <div class="item">
+                <p>item 1</p>
+            </div>
+            <div style="height: 240px;" class="item">
+                <p>item 2</p>
+            </div>
+            <div style="height: 80px;"class="item">
+                <p>item 3</p>
+            </div>
+            <div class="item">
+                <p>item 4</p>
+            </div>
+            <div class="item">
+                <p>item 5</p>
+            </div>
+            <div class="item">
+                <p>item 6</p>
+            </div>
+            <div class="item">
+                <p>item 7</p>
+            </div>
+            <div class="item">
+                <p>item 8</p>
+            </div>
+            <div class="item">
+                <p>item 9</p>
+            </div>
+            <div class="item">
+                <p>item 10</p>
+            </div>
+        </div>
+    </body>
+</html>

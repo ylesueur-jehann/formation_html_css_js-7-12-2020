@@ -1,0 +1,34 @@
+/*
+    Les pseudo classes representent l'etat d'un element
+*/
+p:hover {
+   color: cornflowerblue; 
+}
+
+button:active {
+    background-color: bisque;
+    color: orange;
+}
+
+/**
+    Selectionne un element sur 2 du parent, si c'est un paragraphe, 
+    on lui applique la couleur verte
+    (le parent de <p></p> c'est body, donc on selectionne 
+    un element sur deux dans le body, si l'element n'est pas un paragraphe il ne sera pas en vert)
+*/
+p:nth-child(2n) {
+    color: green;
+}
+
+/* Si le 3ème élément dans le parent est un paragraphe, il sera mis en 
+couleur: burlywood*/
+p:nth-child(3) {
+    color: burlywood;
+}
+
+input:focus {
+    background-color: aliceblue;
+    border-color: orangered;
+}
+
+

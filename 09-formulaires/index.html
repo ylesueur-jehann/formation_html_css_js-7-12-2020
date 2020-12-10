@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les formulaires</title>
+    </head>
+    <body>
+        <h1>Les formulaires</h1>
+        <form action="index.php" method="POST">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username"/>
+            <br/>
+            <label for="passwd">Mot de passe</label>
+            <input type="password" id="passwd" name="passwd">
+            <br/>
+            <input
+                type="submit" 
+                value="Connexion" />
+        </form>
+
+        <h2>Les différents input</h2>
+        <!-- 
+            Si on travail avec des fichiers: il faut preciser l'enctype 
+        -->
+        <!-- <form action="" enctype="multipart/form-data"> -->
+        <!-- <form action="mailto:ylesueur@dawan.fr" method="POST"> -->
+        <form action="" method="POST">
+            <input type="email" placeholder="j.doe@exemple.fr"/>
+            <!-- 
+                min: date minimal selectionnable
+                value: valeur par defaut 
+            -->
+            <input type="date" min="2020-12-06" value="2020-12-07" />
+            <input type="color" />
+            <input
+                type="file" 
+                accept=".pdf"/>
+            <input type="number" >
+
+            <fieldset>
+                <legend>J'accepte les CGU</legend>
+                <input type="radio" name="cgu" id="yes"/>
+                <label for="yes">Oui</label>
+    
+                <input type="radio" name="cgu" id="no"/>
+                <label for="no">Non</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Garniture</legend>
+                <input type="checkbox" value="pomme" name="garniture" id="pomme"/>
+                <label for="pomme">Pomme</label>
+    
+                <input type="checkbox" value="poire" name="garniture" id="poire"/>
+                <label for="poire">Poire</label>
+
+                <input type="checkbox" value="peche" name="garniture" id="peche"/>
+                <label for="peche">Pêche</label>
+            </fieldset>
+
+            <select name="cities">
+                <optgroup label="France">
+                    <option>Paris</option>
+                    <option>Nantes</option>
+                    <option selected>Rennes</option>
+                </optgroup>
+                <optgroup label="Etats-Unis">
+                    <option>New York</option>
+                    <option>San Francisco</option>
+                </optgroup>
+            </select>
+
+            <input
+                list="suggestions"
+                type="search"
+                id="search"
+                placeholder="ex: Paris">
+            <datalist id="suggestions">
+                <option>Pomme</option>
+                <option>Abricot</option>
+                <option>New York</option>
+                <option>San Francisco</option>
+                <option>Paris</option>
+                <option>Nantes</option>
+                <option>Rennes</option>
+            </datalist>
+            <br/>
+            <textarea cols="15" rows="3" placeholder="Salut"></textarea>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
