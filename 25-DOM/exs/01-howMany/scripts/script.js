@@ -10,6 +10,23 @@
  * /!\ On veut une fonction createBtn par exemple
  */
 
+ function ajouterXBouton(combien) {
+    // let linkDivElt = document.getElementById('link'); 
+    let btnDivElt = document.querySelector('#boutons');
+    
+    for (let i = 1; i <= combien; i++) {
+        let newBtnElt = document.createElement('button');
+        
+        newBtnElt.textContent = "Bouton " + i;
+        newBtnElt.style.display = 'block';
+        
+        btnDivElt.appendChild(newBtnElt); 
+    }
+ }
+
+ function creerBtn() {
+    ajouterXBouton(20);
+ }
 
 /* AIDE : */
 /* 1) Récuperer la zone d'affichage
