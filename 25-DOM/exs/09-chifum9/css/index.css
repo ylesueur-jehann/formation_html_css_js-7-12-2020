@@ -1,0 +1,91 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'PT Serif', serif;
+    color: #212529;
+    text-align: center;
+}
+
+
+header hr {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: green; */
+}
+
+p {
+    text-align: center;
+    font-size: 2.5rem;
+    /* background-color:red; */
+}
+
+i {
+    color: #212529;
+}
+
+#versus {
+    font-size: 3rem;
+    color: #dc3545;
+}
+
+.figures button {
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #343a40;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    transition: 300ms;
+}
+
+.figures button:hover {
+    color: transparent;
+    background-color: #343a40;
+}
+
+.figures button:hover i{
+    color: white;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#trace {
+    width: 350px;
+    height: 150px;
+    overflow-y: scroll;
+    margin: auto;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+}
+
+.null {
+    color: #dc3545;
+}
+
+.p-trace {
+    font-size: 1.8rem;
+}
+
+.p-trace .player-name{
+    color: green;
+}
+
+.p-trace .computer-name{
+    color: cornflowerblue;
+}

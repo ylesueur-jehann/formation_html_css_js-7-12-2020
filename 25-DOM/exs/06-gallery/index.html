@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="scripts/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+        <title>Gallery</title>
+    </head>
+    <body>
+        <h1>Gallery Photo</h1>
+        <main>
+            <div class="caroussel">
+                <div class="img-container">
+                    <img id="img-active" src="assets/e-planner_640.jpg" alt=""/>
+                </div>
+
+                <p class="left" onclick="arrowSwitch(-1)">
+                    <i class="fas fa-arrow-left"></i>
+                </p>
+                <p class="right" onclick="arrowSwitch(1)">
+                    <i class="fas fa-arrow-right"></i>
+                </p>
+            </div>
+
+            <div class="img-miniature">
+                <img onclick="changeImg(1)" src="assets/e-planner_640.jpg" alt=""/>
+                <img onclick="changeImg(2)" src="assets/foodtruck_640.jpg" alt=""/>
+                <img onclick="changeImg(3)" src="assets/panda_640.jpg" alt=""/>
+                <img onclick="changeImg(4)" src="assets/pfc_640.jpg" alt=""/>
+                <img onclick="changeImg(5)" src="assets/pyzne_640.jpg" alt=""/>
+            </div>
+        </main>
+
+    </body>
+</html>
