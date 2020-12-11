@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <v-title></v-title>
+    <app-count></app-count>
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -9,12 +10,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue';
 import Title from './components/Title.vue';
+import Count from '@/components/Count.vue';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    'v-title': Title
+    'v-title': Title,
+    'app-count': Count
   }
 }
 </script>
