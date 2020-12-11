@@ -32,6 +32,7 @@ window.addEventListener('scroll', () => {
     const scrollPercentage = (window.scrollY) / (scrollableY);
 
     // en javascript on peut modifier directement le css d'un élément. 
-    tracker.style.width = scrollPercentage * 100 + '%'
+    tracker.style.width = scrollPercentage * 100 + '%';
+    // width: 40%;
 })
 
