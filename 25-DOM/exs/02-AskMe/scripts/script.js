@@ -9,6 +9,24 @@
  * qui seront affichés dans la balise <div id="boutons">
  */
 
+function ajouterXBouton(combien) {
+    let btnDivElt = document.getElementById('boutons'); 
+    
+    for (let i = 1; i <= combien; i++) {
+        let newBtnElt = document.createElement('button');
+        
+        newBtnElt.textContent = "Bouton " + i;
+        newBtnElt.style.display = 'block';
+        
+        btnDivElt.appendChild(newBtnElt); 
+    }
+ }
+
+ function creerBtn() {
+     nombre = +prompt('Combien de boutons voulez-vous creer ? ');
+     ajouterXBouton(nombre);
+ }
+ 
 
 /* AIDE : */
 /* 1) Récuperer la zone d'affichage

@@ -9,16 +9,19 @@
  * qui seront affichés dans la balise <div id="boutons"> 
  * /!\ On veut une fonction createBtn par exemple
  */
+// i = 1;
 
- function ajouterXBouton(combien) {
+function ajouterXBouton(combien) {
     // let linkDivElt = document.getElementById('link'); 
     let btnDivElt = document.querySelector('#boutons');
     
     for (let i = 1; i <= combien; i++) {
+   // if (i < 10) {
         let newBtnElt = document.createElement('button');
         
         newBtnElt.textContent = "Bouton " + i;
         newBtnElt.style.display = 'block';
+      //   i++;
         
         btnDivElt.appendChild(newBtnElt); 
     }
