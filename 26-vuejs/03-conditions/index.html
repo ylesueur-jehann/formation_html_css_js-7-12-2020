@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuejs</title>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+        <script src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p v-if="isVisible == true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ex aliquam rem. Vitae saepe delectus ipsa mollitia temporibus impedit omnis libero! Reprehenderit eum hic alias numquam sint voluptatibus, quo ex?</p>
+            <p v-if="isVisible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ex aliquam rem. Vitae saepe delectus ipsa mollitia temporibus impedit omnis libero! Reprehenderit eum hic alias numquam sint voluptatibus, quo ex?</p>
+            
+            <p v-if="resultat == 2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam optio sed tenetur laudantium dolores et quis. Magni veniam dolorem iusto blanditiis odio ad vero fugiat maxime quo ut. Sequi!
+            </p>
+            <h2 v-else-if="resultat == 3">
+                Le resultat est {{ resultat }}
+            </h2>
+            <p v-else>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, molestiae repellendus, quos est delectus eos, consequuntur rerum quam quibusdam quaerat nesciunt ut cupiditate quae excepturi cumque debitis praesentium consectetur facilis!
+            </p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
