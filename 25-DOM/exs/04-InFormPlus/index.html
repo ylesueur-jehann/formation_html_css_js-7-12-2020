@@ -11,15 +11,15 @@
 
     <div id="blog">
         <h2>creation d'un paragraphe par l'utilisateur </h2>
-        <form onsubmit="createArticle()">
+        <form onsubmit="createArticle(event)">
             <label for="article">Article:</label>
-            <textarea id="article" placeholder="Tapez le texte ici ... "></textarea>
+            <textarea id="article" name="article" placeholder="Tapez le texte ici ... "></textarea>
             
             <label for="size">Taille du Texte:</label>
-            <input type="text" id="size" placeholder="16px" value=""/>
+            <input type="text" id="size" name="size" placeholder="16px" value=""/>
             
             <label for="color">Couleur du texte:</label>
-            <input type="color" id="color"/>
+            <input type="color" name="color" id="color"/>
 
             <input type="submit" id="soumettre" value="Publier">
         </form>

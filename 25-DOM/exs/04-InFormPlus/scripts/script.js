@@ -15,7 +15,31 @@
  */
 
 
+function createArticle(event) {
+  // let articleElt = document.querySelector("#article");
+  // console.log(event);
+  // console.log(event.target[0].value);
+  // console.log(event.target[1].value);
+  // console.log(event.target.article.value);
 
+  let texte = event.target.article.value;
+  let size = event.target.size.value;
+  let color = event.target.color.value;
+  console.log(texte, size, color);
+
+  
+  let newPElt = document.createElement('p');
+  newPElt.textContent = texte;
+  newPElt.style.color = color;
+  newPElt.style.fontSize = size;
+
+
+  let blogElt = document.querySelector('#blog');
+  blogElt.appendChild(newPElt);
+
+  // Supprime le comportement par defaut (Rafraichissement de la page)
+  event.preventDefault();
+}
 
 
 
