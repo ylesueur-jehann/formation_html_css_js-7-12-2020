@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuejs</title>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+        <script src="../vue.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- 
+                Interpolation
+             -->
+            <h1>texte: {{ message }}</h1>
+            <p>1 + 1 = {{ 1 + 1 }}</p>
+            <p>Commentaire posté le {{ date }}</p>
+        </div>
+
+        <!-- 
+            <h1>texte: {{ message }}</h1> <- on n'est plus dans l'application vuejs
+         -->
+
+         <!-- <script src="app.js"></script> -->
+         
+        <!-- <script>
+            const options = {
+                // el: element
+                el: '#app',
+                // data: contiendra toutes les variables de notre application
+                data: {
+                    message: 'Hello World From Data !',
+                    date: new Date()
+
+                }
+            }
+            // viewmodel
+            const vm = new Vue(options);
+        </script> -->
+    </body>
+</html>

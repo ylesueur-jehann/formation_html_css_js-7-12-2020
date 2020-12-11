@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuejs</title>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+        <script src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- v-bind:attr="maVariable"-->
+            <!-- :attr="maVariable" (Raccourcis)-->
+            <a 
+                v-bind:href="myLink"
+                :title="myTitle"
+                target="_blank">
+                Lien vers google
+            </a>
+
+            <!-- <button v-bind:disabled="isDisabled"> -->
+            <button :disabled="isDisabled">
+                Valider le formulaire
+            </button>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
